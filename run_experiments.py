@@ -6,11 +6,14 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 ws = range(11)  # argv[2]的取值范围为0-10
 epsilons = range(11)  # argv[2]的取值范围为0-8
 function_types = ['l', 'q']  # argv[3]的取值为'l'或'q' (linear or quadratic)
-indices = [2]  # argv[4]的取值为0或1 (different datasets)
+indices = [3]  # argv[4]的取值为0或1 (different datasets)
 
 # 定义脚本名称列表
 script_names = [
-    'simulation_SWM.py'
+    'simulation_SWM.py',
+    'simulation_NE.py',
+    'simulation_Distributed_Algorithm_CSFL.py'
+
 ]
 
 def run_experiment(script_name, variable, value, function_type, index):

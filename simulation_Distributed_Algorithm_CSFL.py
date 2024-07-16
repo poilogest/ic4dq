@@ -142,8 +142,8 @@ class NE:
 
 
 def init(argv):
-    global w_, w
-    global epsilon_, epsilon
+    global w
+    global epsilon
     global g_type, d
     global N, k, m, a, b, c
     
